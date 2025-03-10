@@ -1,7 +1,17 @@
+/* ************************************************************************** */
+/*                                                                            */
+/*                                                        :::      ::::::::   */
+/*   init.c                                             :+:      :+:    :+:   */
+/*                                                    +:+ +:+         +:+     */
+/*   By: eschula <<marvin@42.fr>                    +#+  +:+       +#+        */
+/*                                                +#+#+#+#+#+   +#+           */
+/*   Created: 2025/02/26 14:45:38 by eschula           #+#    #+#             */
+/*   Updated: 2025/03/06 14:14:09 by eschula          ###   ########.fr       */
+/*                                                                            */
+/* ************************************************************************** */
 
 #include "so_long.h"
 
-// Inicializa a estrutura do jogo com números padrões.
 void	ft_init_game_struct(t_game *game)
 {
 	game->counter.collect = 0;
@@ -18,7 +28,6 @@ void	ft_init_game_struct(t_game *game)
 	game->steps = 1;
 }
 
-// Carrega o mapa na estrutura do jogo.
 void	ft_get_map(t_game *game, char *file)
 {
 	char	*map;
