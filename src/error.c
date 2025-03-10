@@ -6,7 +6,7 @@
 /*   By: eschula <<marvin@42.fr>                    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2025/03/10 11:34:13 by eschula           #+#    #+#             */
-/*   Updated: 2025/03/10 11:34:15 by eschula          ###   ########.fr       */
+/*   Updated: 2025/03/10 16:37:50 by eschula          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -39,7 +39,7 @@ static void	map_error(char *str, void (*callback)(char *str))
 static void	handle_map_error(short code)
 {
 	if (code == EXIT_SUCCESS)
-		map_error("Finalizado!\n", &print_s);
+		map_error("Finished!\n", &print_s);
 	if (code == E_INVALID_MAP_SIZE)
 		map_error("invalid map size", &print_e);
 	if (code == E_INVALID_MAP_WALLS)
