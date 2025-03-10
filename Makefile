@@ -1,6 +1,3 @@
-# VALGRIND
-VALGRIND_LOG := valgrind.log
-
 
 # COLORS
 GREEN := \033[32m
@@ -113,6 +110,6 @@ fclean: clean
 
 re: fclean
 	@make --no-print-directory
-	
+
 
 .PHONY: all clean fclean re print libft mlx print_bonus valgrind_bonus

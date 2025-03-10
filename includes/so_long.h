@@ -6,7 +6,7 @@
 /*   By: eschula <<marvin@42.fr>                    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2025/03/10 11:36:55 by eschula           #+#    #+#             */
-/*   Updated: 2025/03/10 11:36:58 by eschula          ###   ########.fr       */
+/*   Updated: 2025/03/10 19:50:24 by eschula          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -62,8 +62,8 @@
 # define ESC MLX_KEY_ESCAPE
 
 // TEXTURE BLOCK SIZE
-# define WIDTH 65
-# define HEIGHT 65
+# define WIDTH 64
+# define HEIGHT 64
 
 typedef struct s_coin
 {
