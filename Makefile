@@ -93,6 +93,14 @@ $(BIN_PATH)%.o: $(SRC_PATH)%.c
 	@$(CC) $(CFLAGS) -c $< -o $@ -I$(HEADER_PATH)
 	@echo " "
 
+norm:
+	@echo "\n$(BLUE)======= INCLUDES =======$(END)"
+	@norminette includes | sed 's/OK/\x1b[1;32m&\x1b[0m/g' | sed 's/Error/\x1b[1;31m&\x1b[0m/g'
+	@echo "\n$(MAGENTA)======= SRC =======$(END)"
+	@norminette src | sed 's/OK/\x1b[1;32m&\x1b[0m/g' | sed 's/Error/\x1b[1;31m&\x1b[0m/g'
+	@echo "\n$(MAGENTA)======= LIBFT =======$(END)"
+	@norminette libs/libft | sed 's/OK/\x1b[1;32m&\x1b[0m/g' | sed 's/Error/\x1b[1;31m&\x1b[0m/g'
+
 
 clean:
 	@printf "$(RED)[Removing Objects...]$(COLOR_LIMITER)\n"
